@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-US" class="artdeco">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LinkedIn Network | LinkedIn</title>
+  <link rel="shortcut icon" href="https://static.licdn.com/sc/h/9lb1g1kp916tat669q9r5g2kz">
+  <link rel="apple-touch-icon" href="https://static.licdn.com/sc/h/1exdo4axa6eaw1jioxh1vu4fj">
+  <meta name="description" content="Grow your professional network on LinkedIn">
+  <meta name="robots" content="noarchive">
+  <link rel="stylesheet" href="https://static.licdn.com/sc/h/aqyadolt0wu7chazdqaa989fi">
+  <style>
+    /* Basic LinkedIn-like styling */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f2ef;
+      color: #000000e6;
+    }
+
+    .header {
+      background: #ffffff;
+      border-bottom: 1px solid #00000017;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: 52px;
+    }
+
+    .linkedin-logo {
+      padding: 8px 16px;
+      display: inline-block;
+    }
+
+    .main-content {
+      margin-top: 52px;
+      padding: 24px;
+      max-width: 1128px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #00000017;
+      margin-bottom: 16px;
+      padding: 24px;
+    }
+
+    .btn-primary {
+      background: #0a66c2;
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: #004182;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .margin-top-12 {
+      margin-top: 12px;
+    }
+
+    .margin-top-24 {
+      margin-top: 24px;
+    }
+
+    .hidden { display: none; }
+  </style>
+</head>
+
+<body class="system-fonts ">
+
+  <div id="app__container" class="glimmer">
+    <header>
+      <a class="linkedin-logo" href="/" aria-label="LinkedIn">
+        <li-icon aria-label="LinkedIn" size="28dp" alt="LinkedIn" color="brand" type="linkedin-logo">
+          <svg width="102" height="26" viewbox="0 0 102 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+            id="linkedin-logo" preserveaspectratio="xMinYMin meet" focusable="false">
+            <path
+              d="M13 10H17V22H13V10ZM15 3.8C14.5671 3.80984 14.1468 3.94718 13.7917 4.19483C13.4365 4.44247 13.1623 4.7894 13.0035 5.19217C12.8446 5.59493 12.8081 6.03562 12.8985 6.45903C12.989 6.88244 13.2024 7.26975 13.5119 7.57245C13.8215 7.87514 14.2135 8.07976 14.6389 8.16067C15.0642 8.24159 15.504 8.1952 15.903 8.02732C16.3021 7.85943 16.6428 7.57752 16.8824 7.2169C17.122 6.85627 17.2499 6.43297 17.25 6C17.2515 5.70645 17.1939 5.4156 17.0807 5.14474C16.9675 4.87388 16.801 4.62854 16.5911 4.42331C16.3812 4.21808 16.1322 4.05714 15.8589 3.95006C15.5855 3.84299 15.2934 3.79195 15 3.8ZM4 4H0V22H11V18H4V4ZM57.9 16.2C57.9 16.61 57.9 16.86 57.9 17H48.9C48.9021 17.169 48.9256 17.337 48.97 17.5C49.1765 18.0933 49.5745 18.6011 50.1014 18.9433C50.6282 19.2855 51.254 19.4427 51.88 19.39C52.4142 19.4129 52.9468 19.3171 53.4396 19.1096C53.9324 18.9021 54.3731 18.5881 54.73 18.19L57.45 19.87C56.7533 20.6812 55.88 21.322 54.8971 21.7433C53.9142 22.1645 52.8479 22.3549 51.78 22.3C48.19 22.3 45.12 20.25 45.12 16.11C45.091 15.2506 45.2411 14.3946 45.5608 13.5963C45.8804 12.798 46.3626 12.075 46.9767 11.4731C47.5908 10.8712 48.3234 10.4037 49.128 10.1001C49.9325 9.7966 50.7914 9.66374 51.65 9.71C55.08 9.71 57.9 12 57.9 16.2ZM54.15 14.69C54.16 14.3669 54.0997 14.0455 53.9731 13.748C53.8466 13.4506 53.6569 13.1842 53.4172 12.9673C53.1775 12.7504 52.8935 12.5883 52.5849 12.492C52.2763 12.3958 51.9505 12.3678 51.63 12.41C50.9638 12.3515 50.3013 12.558 49.7865 12.9849C49.2716 13.4118 48.9459 14.0245 48.88 14.69H54.15ZM68 4H72V22H68.61V20.57C68.1486 21.1444 67.5541 21.5977 66.878 21.8904C66.2019 22.1832 65.4646 22.3066 64.73 22.25C62.22 22.25 59.18 20.39 59.18 16C59.18 12.08 61.87 9.75 64.68 9.75C65.299 9.72159 65.9167 9.82856 66.4902 10.0634C67.0636 10.2983 67.5788 10.6555 68 11.11V4ZM68.3 16C68.3 14.12 67.13 12.87 65.64 12.87C65.2366 12.8697 64.8373 12.9508 64.466 13.1084C64.0946 13.266 63.7589 13.4969 63.4788 13.7872C63.1988 14.0775 62.9801 14.4214 62.836 14.7981C62.6919 15.1749 62.6252 15.5769 62.64 15.98C62.6279 16.3815 62.6966 16.7813 62.842 17.1557C62.9874 17.5301 63.2064 17.8716 63.4862 18.1597C63.766 18.4479 64.1008 18.677 64.4708 18.8333C64.8407 18.9897 65.2383 19.0702 65.64 19.07C66.0201 19.0542 66.393 18.9609 66.7357 18.7957C67.0785 18.6305 67.3838 18.3969 67.6329 18.1094C67.8821 17.8219 68.0698 17.4864 68.1845 17.1236C68.2992 16.7609 68.3385 16.3785 68.3 16ZM45.76 10H41L37.07 14.9H37V4H33V22H37V16.27H37.07L41.07 22H46L41 15.48L45.76 10ZM26.53 9.7C25.7825 9.68818 25.0441 9.8653 24.3833 10.2149C23.7226 10.5645 23.1607 11.0754 22.75 11.7H22.7V10H19V22H23V15.47C22.956 15.1525 22.9801 14.8292 23.0706 14.5216C23.1611 14.2141 23.316 13.9294 23.525 13.6863C23.7341 13.4432 23.9924 13.2474 24.2829 13.1118C24.5734 12.9763 24.8894 12.9041 25.21 12.9C26.31 12.9 27 13.49 27 15.42V22H31V14.56C31 10.91 28.71 9.7 26.53 9.7ZM102 2V24C102 24.5304 101.789 25.0391 101.414 25.4142C101.039 25.7893 100.53 26 100 26H78C77.4696 26 76.9609 25.7893 76.5858 25.4142C76.2107 25.0391 76 24.5304 76 24V2C76 1.46957 76.2107 0.960859 76.5858 0.585786C76.9609 0.210714 77.4696 0 78 0L100 0C100.53 0 101.039 0.210714 101.414 0.585786C101.789 0.960859 102 1.46957 102 2ZM84 10H80V22H84V10ZM84.25 6C84.2599 5.553 84.1365 5.11317 83.8954 4.73664C83.6542 4.36011 83.3064 4.06396 82.8962 3.88597C82.4861 3.70798 82.0322 3.65622 81.5925 3.73731C81.1528 3.8184 80.7472 4.02865 80.4275 4.34124C80.1079 4.65382 79.8885 5.05456 79.7976 5.49233C79.7066 5.9301 79.7482 6.38503 79.9169 6.79909C80.0856 7.21314 80.3739 7.56754 80.7449 7.81706C81.1159 8.06657 81.5529 8.19989 82 8.2C82.2934 8.20805 82.5855 8.15701 82.8588 8.04994C83.1322 7.94286 83.3812 7.78192 83.5911 7.57669C83.801 7.37146 83.9675 7.12612 84.0807 6.85526C84.1939 6.5844 84.2514 6.29355 84.25 6ZM98 14.56C98 10.91 95.71 9.66 93.53 9.66C92.7782 9.65542 92.0375 9.84096 91.3766 10.1994C90.7158 10.5578 90.1562 11.0774 89.75 11.71V10H86V22H90V15.47C89.956 15.1525 89.9801 14.8292 90.0706 14.5216C90.1611 14.2141 90.316 13.9294 90.525 13.6863C90.7341 13.4432 90.9924 13.2474 91.2829 13.1118C91.5734 12.9763 91.8894 12.9041 92.21 12.9C93.31 12.9 94 13.49 94 15.42V22H98V14.56Z"
+              fill="#0A66C2"></path>
+          </svg>
+        </li-icon>
+      </a>
+    </header>
+
+    <main class="app__content" role="main">
+      <div id="artdeco-global-alert-container" aria-live="assertive" role="alert" class="global-alert-banner">
+        <div class="artdeco-global-alert artdeco-global-alert--NOTICE artdeco-global-alert--COOKIE_CONSENT"
+          alert-id="urn:li:alert:10" aria-hidden="true" severity="NOTICE" type="COOKIE_CONSENT">
+          <section class="artdeco-global-alert__body">
+            <li-icon class="artdeco-global-alert__icon">
+              <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  height="24" width="24">
+                  <path
+                    d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10c5.5,0,10-4.5,10-10C22,6.5,17.5,2,12,2zM12,20.2c-4.5,0-8.2-3.7-8.2-8.2S7.5,3.8,12,3.8s8.2,3.7,8.2,8.2S16.5,20.2,12,20.2zM11,10h2v8h-2V10zM11,6h2v2h-2V6z"
+                    fill="#fff"></path>
+                </svg>
+              </span>
+            </li-icon>
+            <div class="artdeco-global-alert__responsive-container">
+              <div class="artdeco-global-alert__responsive-content-container">
+                <div class="artdeco-global-alert__content">
+                  <p>LinkedIn and 3rd parties use essential and non-essential cookies to provide, secure, analyze and
+                    improve our Services, and to show you relevant ads (including <b>professional and job ads</b>) on
+                    and off LinkedIn. Learn more in our <a href="https://www.linkedin.com/legal/cookie-policy">Cookie
+                      Policy</a>.</p>
+                  <p>Select Accept to consent or Reject to decline non-essential cookies for this use. You can update
+                    your choices at any time in your <a
+                      href="https://www.linkedin.com/mypreferences/g/guest-cookies">settings</a>.</p>
+                </div>
+              </div>
+              <div class="artdeco-global-alert-action__wrapper">
+                <button
+                  class="artdeco-global-alert-action artdeco-button artdeco-button--inverse artdeco-button--2 artdeco-button--primary"
+                  action-url action-type="ACCEPT"
+                  data-tracking-control-name="urn:li:control:ga-cookie.consent.accept.v4"
+                  data-control-name="urn:li:control:ga-cookie.consent.accept.v4">
+                  Accept
+                </button>
+                <button
+                  class="artdeco-global-alert-action artdeco-button artdeco-button--inverse artdeco-button--2 artdeco-button--primary"
+                  action-url action-type="DENY" data-tracking-control-name="urn:li:control:ga-cookie.consent.deny.v4"
+                  data-control-name="urn:li:control:ga-cookie.consent.deny.v4">
+                  Reject
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div data-litms-pageview="true"></div>
+
+      <div class="card-layout">
+        <div id="organic-div">
+
+          <div class="header__content ">
+            <h1 class="header__content__heading ">
+              Welcome to LinkedIn
+            </h1>
+            <p class="header__content__subheading ">
+              Connect with professionals and grow your network
+            </p>
+          </div>
+
+          <div class="card margin-top-24">
+            <h2>Your Professional Network</h2>
+            <p class="margin-top-12">LinkedIn helps you build a professional network that can help you advance your career. Connect with people in your industry, discover new opportunities, and stay updated with the latest trends.</p>
+            
+            <div class="margin-top-24">
+              <a href="#" class="btn-primary">Explore Your Network</a>
+            </div>
+          </div>
+          
+          <div class="card margin-top-24">
+            <h2>Grow Your Connections</h2>
+            <p class="margin-top-12">Expand your network by connecting with colleagues, classmates, and industry professionals. The larger your network, the more opportunities you'll discover.</p>
+            
+            <div class="margin-top-24">
+              <a href="#" class="btn-primary">Find Connections</a>
+            </div>
+          </div>
+
+          <div class="card margin-top-24">
+            <h2>Industry Insights</h2>
+            <p class="margin-top-12">Stay informed about the latest trends and developments in your industry. LinkedIn provides valuable insights that can help you make informed career decisions.</p>
+            
+            <div class="margin-top-24">
+              <a href="#" class="btn-primary">View Insights</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer__base" role="contentinfo">
+      <div class="footer__base__wrapper">
+        <p class="copyright">
+          <li-icon size="14dp" alt="LinkedIn" aria-hidden="true" type="linkedin-logo"><svg preserveaspectratio="xMinYMin meet" focusable="false">
+              <g class="scaling-icon" style="fill-opacity: 1">
+                <defs>
+                </defs>
+                <g class="logo-14dp">
+                  <g class="dpi-1">
+                    <g class="inbug" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <path d="M14,1.25 L14,12.75 C14,13.44 13.44,14 12.75,14 L1.25,14 C0.56,14 0,13.44 0,12.75 L0,1.25 C0,0.56 0.56,0 1.25,0 L12.75,0 C13.44,0 14,0.56 14,1.25" class="bug-text-color" fill="#FFFFFF" transform="translate(42.000000, 0.000000)">
+                      </path>
+                      <path d="M56,1.25 L56,12.75 C56,13.44 55.44,14 54.75,14 L43.25,14 C42.56,14 42,13.44 42,12.75 L42,1.25 C42,0.56 42.56,0 43.25,0 L54.75,0 C55.44,0 56,0.56 56,1.25 Z M47,5 L45,5 L45,11 L47,11 L47,5 Z M46.0100475,4 C45.4502268,4 45,3.55097518 45,3.00969865 C45,2.46842212 45.4502268,2 46.0100475,2 C46.5698682,2 47,2.46842212 47,3.00969865 C47,3.55097518 46.5698682,4 46.0100475,4 Z M54,11 L52,11 L52,7.5 C52,6.7 52,5.5 50.5,5.5 C49,5.5 49,6.7 49,7.5 L49,11 L47,11 L47,5 L49,5 L49,6 C49.35,5.34 49.7,5 51.0593333,5 C52.4186667,5 54,5.31 54,7.5 L54,11 Z" class="background" fill="#000000"></path>
+                    </g>
+                    <g class="linkedin-text">
+                      <path d="M40,12 L38.107,12 L38.107,11.1 L38.077,11.1 C37.847,11.518 37.125,12.062 36.167,12.062 C34.174,12.062 33,10.521 33,8.5 C33,6.479 34.291,4.938 36.2,4.938 C36.971,4.938 37.687,5.332 38.097,5.698 L38.097,3 L40,3 L40,12 Z M36.475,6.75 C35.517,6.75 34.9,7.476 34.9,8.5 C34.9,9.524 35.529,10.25 36.475,10.25 C37.422,10.25 38.05,9.524 38.05,8.5 C38.05,7.476 37.422,6.75 36.475,6.75 L36.475,6.75 Z" fill="#000000"></path>
+                      <path d="M31.7628,10.8217 C31.0968,11.5887 29.9308,12.0627 28.4998,12.0627 C26.3388,12.0627 24.9998,10.6867 24.9998,8.4477 C24.9998,6.3937 26.4328,4.9377 28.6578,4.9377 C30.6758,4.9377 31.9998,6.3497 31.9998,8.6527 C31.9998,8.8457 31.9708,8.9997 31.9708,8.9997 L26.8228,8.9997 L26.8348,9.1487 C26.9538,9.8197 27.6008,10.5797 28.6358,10.5797 C29.6528,10.5797 30.2068,10.1567 30.4718,9.8587 L31.7628,10.8217 Z M30.2268,7.9047 C30.2268,7.0627 29.5848,6.4297 28.6508,6.4297 C27.6058,6.4297 26.9368,7.0597 26.8728,7.9047 L30.2268,7.9047 Z" fill="#000000"></path>
+                      <polygon fill="#000000" points="18 12 20 12 20 8.133 22.602 12 25 12 22 7.875 24.643 4 22.275 4 20 6.933 20 4 18 4"></polygon>
+                      <path d="M14.5,4 L10.5,4 L10.5,12 L12.5,12 L12.5,9.5 L14,9.5 C15.5,9.5 16.5,8.5 16.5,7 C16.5,5.5 15.5,4 14.5,4 Z M14.5,7.5 L12.5,7.5 L12.5,6 L14.5,6 C14.8,6 15,6.22 15,6.75 C15,7.28 14.8,7.5 14.5,7.5 Z" fill="#000000"></path>
+                      <polygon fill="#000000" points="3 12 5 12 5 6 7 6 7 4 1 4 1 6 3 6"></polygon>
+                    </g>
+                  </g>
+                  <g class="dpi-gt1" transform="scale(0.8333)">
+                    <g class="inbug" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <path d="M44.5235,0 L3.6185,0 C1.6625,0 0.0005,1.547 0.0005,3.454 L0.0005,44.545 C0.0005,46.452 1.6625,48 3.6185,48 L44.5235,48 C46.4825,48 48.1415,46.452 48.1415,44.545 L48.1415,3.454 C48.1415,1.547 46.4825,0 44.5235,0" class="bug-text-color" fill="#FFFFFF" transform="translate(143.000000, 0.000000)"></path>
+                      <path d="M187.5235,0 L146.6185,0 C144.6625,0 143.0005,1.547 143.0005,3.454 L143.0005,44.545 C143.0005,46.452 144.6625,48 146.6185,48 L187.5235,48 C189.4825,48 191.1415,46.452 191.1415,44.545 L191.1415,3.454 C191.1415,1.547 189.4825,0 187.5235,0 Z M162,18 L156,18 L156,37 L162,37 L162,18 Z M159.0000227,15.1640113 C156.9473693,15.1640113 155.640012,13.8530372 155.640012,12.1799611 C155.640012,10.5069851 156.9473693,9.1960111 159.0000227,9.1960111 C161.052676,9.1960111 162.360033,10.5069851 162.360033,12.1799611 C162.360033,13.8530372 161.052676,15.1640113 159.0000227,15.1640113 Z M186,37 L180,37 L180,26.500167 C180,23.2486559 178.226074,21 175.212493,21 C172.666422,21 171,23.2486559 171,26.500167 L171,37 L165,37 L165,18 L171,18 L171,21 C171,21 172.651163,18 176.357113,18 C180.587496,18 186,20.7900029 186,26.500167 L186,37 Z" class="background" fill="#000000"></path>
+                    </g>
+                    <g class="linkedin-text">
+                      <path d="M136,37 L130,37 L130,35 L129.908,35 C129.298,36.031 127.404,37.312 124.544,37.312 C120.405,37.312 116,33.214 116,24.5 C116,15.786 120.405,11.688 124.544,11.688 C127.404,11.688 129.298,12.969 129.908,14 L130,14 L130,12 L136,12 L136,37 Z M124.943,17.688 C122.51,17.688 121.5,19.823 121.5,24.5 C121.5,29.177 122.51,31.312 124.943,31.312 C127.377,31.312 128.386,29.177 128.386,24.5 C128.386,19.823 127.377,17.688 124.943,17.688 L124.943,17.688 Z" fill="#000000"></path>
+                      <path d="M108,37 L102,37 L102,23.692 C102,19.131 99.367,16.755 96.250,16.755 C92.734,16.755 91,19.984 91,23.692 L91,37 L85,37 L85,12 L91,12 L91,14.755 L91.093,14.755 C92.497,12.937 95.153,11.688 97.667,11.688 C103.299,11.688 108,14.756 108,22.968 L108,37 Z" fill="#000000"></path>
+                      <path d="M79.0819,14.9581 C77.0839,17.0521 75.3999,20.7551 75.3999,26.9991 C75.3999,33.2441 77.0839,36.9441 79.0819,39.0421 C80.5999,40.6981 82.7419,41.6991 85.4039,41.6991 C87.5989,41.6991 89.5249,41.0991 90.8529,39.6761 L90.8529,40.8741 C90.8529,44.4671 89.5249,47.3581 85.6489,47.3581 C82.9249,47.3581 81.1289,46.0131 80.3719,43.9151 L74.6089,43.9151 C75.6549,49.5781 80.0049,52.9991 85.6489,52.9991 C94.6059,52.9991 97.0799,47.6401 97.0799,40.8741 L97.0799,12.0001 L91.0799,12.0001 L91.0799,14.0981 L90.9869,14.0981 C89.5249,12.5351 87.5989,11.6881 85.4039,11.6881 C82.7419,11.6881 80.5999,12.6891 79.0819,14.9581 Z M85.6489,17.6881 C88.6169,17.6881 90.8529,20.5791 90.8529,26.9991 C90.8529,33.4211 88.6169,36.3121 85.6489,36.3121 C82.6809,36.3121 80.4439,33.4211 80.4439,26.9991 C80.4439,20.5791 82.6809,17.6881 85.6489,17.6881 Z" fill="#000000"></path>
+                      <polygon fill="#000000" points="64 37 70 37 70 12 64 12"></polygon>
+                      <path d="M59.1582,24.1768 C59.1582,20.9648 57.2622,17.9688 52.7502,17.9688 C48.6372,17.9688 45.9402,20.2148 45.1582,23.0898 L51.3582,23.0898 C51.5722,21.8558 52.4482,20.7578 53.9012,20.7578 C55.6892,20.7578 56.3582,21.9218 56.3582,22.9808 L56.3582,23.5858 C55.0452,23.1558 53.3582,22.9178 51.7182,22.9178 C47.8652,22.9178 44.5582,24.6298 44.5582,28.9258 C44.5582,32.7678 47.4882,34.9258 51.1362,34.9258 C53.5342,34.9258 55.4302,33.9678 56.3582,32.4198 L56.4502,32.4198 L56.4502,34.6578 L62.0142,34.6578 L62.0142,23.8218 C62.0142,23.5378 62.0142,23.2538 61.9762,22.9808 C61.9762,22.8088 61.9762,22.6368 61.9382,22.4738 C61.9002,22.3108 61.9002,22.1478 61.8622,21.9848 C61.6102,19.7648 60.3352,18.0528 59.1582,24.1768 Z M53.0662,32.0988 C51.3962,32.0988 50.1582,31.1408 50.1582,29.3358 C50.1582,27.1158 51.8282,26.1578 53.7242,26.1578 C55.1392,26.1578 56.1732,26.3958 56.9552,26.7498 C56.6652,29.9618 54.7312,32.0988 53.0662,32.0988 Z" fill="#000000"></path>
+                      <polygon fill="#000000" points="38 37 44 37 44 12 38 12"></polygon>
+                      <path d="M41,3 C39.346,3 38,4.346 38,6 C38,7.654 39.346,9 41,9 C42.654,9 44,7.654 44,6 C44,4.346 42.654,3 41,3 Z" fill="#000000"></path>
+                      <polygon fill="#000000" points="26 16 32 16 32 37 38 37 38 16 44 16 44 12 38 12 38 6 32 6 32 12 26 12"></polygon>
+                      <path d="M22.9902,24.6064 C22.9902,21.3984 21.0942,18.4024 16.5822,18.4024 C12.4692,18.4024 9.7722,20.6484 8.9902,23.5234 L15.1902,23.5234 C15.4042,22.2894 16.2802,21.1914 17.7332,21.1914 C19.5212,21.1914 20.1902,22.3554 20.1902,23.4144 L20.1902,24.0194 C18.8772,23.5894 17.1902,23.3514 15.5502,23.3514 C11.6972,23.3514 8.3902,25.0634 8.3902,29.3594 C8.3902,33.2014 11.3202,35.3594 14.9682,35.3594 C17.3662,35.3594 19.2622,34.4014 20.1902,32.8534 L20.2822,32.8534 L20.2822,35.0914 L25.8462,35.0914 L25.8462,24.2554 C25.8462,23.9714 25.8462,23.6874 25.8082,23.4144 C25.8082,23.2424 25.8082,23.0704 25.7702,22.9074 C25.7322,22.7444 25.7322,22.5814 25.6942,22.4184 C25.4422,20.1984 24.1672,18.4864 22.9902,24.6064 Z M16.8982,32.5324 C15.2282,32.5324 13.9902,31.5744 13.9902,29.7694 C13.9902,27.5494 15.6602,26.5914 17.5562,26.5914 C18.9712,26.5914 20.0052,26.8294 20.7872,27.1834 C20.4972,30.3954 18.5632,32.5324 16.8982,32.5324 Z" fill="#000000"></path>
+                      <path d="M2.9917,27.4583 C2.9917,24.5353 4.5567,21.5393 7.8047,21.5393 C10.5777,21.5393 12.2097,23.6393 12.2097,27.0343 C12.2097,30.6633 10.3897,32.9473 7.8047,32.9473 C4.6867,32.9473 2.9917,30.5343 2.9917,27.4583 Z M0.0377,27.4003 C0.0377,33.1553 3.5317,37.0343 7.8047,37.0343 C12.0777,37.0343 15.5717,33.1553 15.5717,27.4003 C15.5717,21.6443 12.0777,17.7653 7.8047,17.7653 C3.5317,17.7653 0.0377,21.6443 0.0377,27.4003 Z" fill="#000000"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg></li-icon>
+
+          <em>
+            <span class="a11y__label">
+              LinkedIn
+            </span>
+            © 2025
+          </em>
+        </p>
+        <div>
+          <ul class="footer__base__nav-list" aria-label="Footer Legal Menu">
+            <li>
+                <a href="/legal/user-agreement?trk=d_checkpoint_lg_consumerLogin_ft_user_agreement">
+                  User Agreement
+                </a>
+            </li>
+            <li>
+              <a href="/legal/privacy-policy?trk=d_checkpoint_lg_consumerLogin_ft_privacy_policy">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="/help/linkedin/answer/34593?lang=en&amp;trk=d_checkpoint_lg_consumerLogin_ft_community_guidelines">
+                Community Guidelines
+              </a>
+            </li>
+            <li>
+              <a href="/legal/cookie-policy?trk=d_checkpoint_lg_consumerLogin_ft_cookie_policy">
+                Cookie Policy
+              </a>
+            </li>
+            <li>
+              <a href="/legal/copyright-policy?trk=d_checkpoint_lg_consumerLogin_ft_copyright_policy">
+                Copyright Policy
+              </a>
+            </li>
+            <li>
+              <a href="/psettings/guest-controls?trk=d_checkpoint_lg_consumerLogin_ft_guest_controls">
+                Guest Controls
+              </a>
+            </li>
+            <li>
+              <a href="/legal/professional-community-policies?trk=d_checkpoint_lg_consumerLogin_ft_community_policies">
+                Professional Community Policies
+              </a>
+            </li>
+            <li>
+              <a href="/help/linkedin?trk=d_checkpoint_lg_consumerLogin_ft_language_selector">
+                Language
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
